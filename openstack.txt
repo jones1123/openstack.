@@ -1,0 +1,54 @@
+OpenStack is a set of open-source software tools for building and managing cloud computing platforms. Thousands of individuals and companies like Red Hat, Dell and Rackspace have created OpenStack. They work together with the goal of making OpenStack the most robust and secure platform on the market. OpenStack competes with cloud platforms such as Amazon Web Services and Microsoft Azure. Companies us it to manage both public and private clouds.
+OpenStack
+
+OpenStack is an IaaS (infrastructure as a service). The infrastructure makes it easy for developers to build services and applications on top of it.  Before we go any further, it helps to understand the role of each primary component. The OpenStack community has identified nine primary components that are part of the core stack. Let’s quickly cover the nice core components.
+
+Nova is the primary compute engine of OpenStack. Developers designed it to manage virtual machines on standard hardware. Nova is similar in function to EC2 from AWS and was one of the contributions from NASA when OpenStack got started.
+
+Swift is the object storage system contributed by Rackspace. Swift is similar to S3 from Amazon in that it’s able to scale to massive sizes. Using a unique identifier, developers utilize Swift to decide where objects are stored. This allows the system to easily scale because developers don’t have to worry about the storage capacity on a single system.
+
+Cinder is the block storage component of OpenStack. It works more like tradition storage in performance and architecture.
+
+Keystone is the main tool for user authentication and role-based access controls. It acts as a central directory of all users and their respective permissions. Keystone supports traditional username and password logins as well.
+
+Glance allows the user to spin up virtual machines by creating templates for them. It works with Cinder to store images it creates from templates, but it can also create its own images.
+
+Horizon is the only graphical component of OpenStack. It’s basically a web-based tool that users and administrators use to access the other components. Many call it the dashboard of OpenStack.
+
+Neutron manages all network associated with OpenStack clouds. It includes APIs that allow administrators to customize and deploy a variety of network types such as flat networks, VLANs or VPNs.
+
+Heat helps developers manage the infrastructure needed for a cloud service to run. It defines all the resources each application needs to run properly.
+
+Ceilometer is the billing engine of OpenStack. It’s still evolving, but consider it the metering agent of OpenStack.
+
+There are more components to OpenStack but these are the core ones. By the time you read this I expect developers will have added even more.
+Competing Clouds
+
+A lot of the attraction of OpenStack is its philosophy of evolving the platform in the open. When you choose OpenStack, you’re choosing a community as much as a platform. And that community will be your partner. I don’t want to get into a discussion of which philosophy is better. Both Amazon and Microsoft have proven over the years they know what their customers want, but there’s clearly room for more players. The OpenStack community determines the direction of the platform. The OpenStack community makes their decisions in the public domain which means failures are easier to spot.
+benefits and challanges
+1 Open source
+Some say that OpenStack is the largest open source project ever. It combines computing, networking, and storage subsystems in layers via APIs within a single platform. The open source environment allows you to create a truly software defined data center. For instance, you can modify the APIs to enhance integration and subsystem usage as well as extend resource orchestration beyond your OpenStack environment to the public cloud. Some vendors, such as RedHat, have developed and continue to support their own distributions of OpenStack. And with a community of over 200 active enterprise participants, you should have no trouble finding tailored OpenStack solutions to fit your needs along with the necessary support.
+
+    The challenge: As an open source comprehensive project, influencers such as Randy Bias claim that OpenStack is lacking real leadership. Obviously this is a significant disadvantage, considering the fact that CIOs need to plan deployments years ahead and ensure that they eliminate future risks by choosing the right solution and vendors.
+
+2 Hybrid cloud
+
+Many enterprises see the public cloud as an extension of their data centers. A recent survey from Peer 1 Hosting concluded, with 28% participant approval, that hybrid cloud adoption is likely to triple over the course of the next three years.
+
+Following this hybrid cloud adoption trend, leading public cloud vendors such as Google have been embracing the concept of a hybrid cloud via OpenStack. Another particularly good example is Eucalyptus, which was acquired by HP and has taken hybrid cloud accessibility one step further by enhancing OpenStack’s compatibility with AWS.
+
+    The challenge: IT organizations that decide to look for a hybrid cloud solution will find that OpenStack APIs don’t support out-of-the-box integration with various leading public clouds. While there is great potential, integration requires hefty investments to fit the solution to specific needs.
+
+3 Orchestration
+
+Without orchestration, Infrastructure-as-a-Service (IaaS) platforms remain stuck in confined environments. Orchestration is the comprehensive automated provisioning of infrastructure based on specific application requirements such as support for multi-tier, distributed applications that can utilize sporadic resources for particular independent subsets (services).
+
+“OpenStack is a platform that frees users to run proven technologies like VMs as well as new technologies like containers,” noted OpenStack COO, Mark Collier in Google’s recent announcement to sponsor OpenStack. “With Google committing unequaled container and container management engineering expertise to our community, the deployment of containers via proven orchestration engines like Kubernetes will accelerate rapidly.”
+
+Containers only require a thin OS to run applications, providing the ability to increase workload density in an OpenStack environment without having to purchase more hardware. The combination consequently results in a higher level of utilization and efficiency. With containers, moving workloads is nearly seamless between OpenStack, VMware and public clouds, like AWS and Google Cloud Platform (GCP), that support containers, creating infrastructural efficiency and scalability.
+
+    The challenge: OpenStack still lacks the out-of-the-box robustness that enterprises desire for their data centers, including IT management features such as availability, scalability and security. Data center operations teams still can’t completely guarantee that workloads running in OpenStack will be able to maintain preferred performance levels without extraneous measures to ensure optimal levels of infrastructure utilization.                Conclusion:
+
+So this concludes my Openstack for Layman series :). We learnt how Openstack was derived out of necessity to comprehensively manage and virtualize the data centres. As Business requirements grew, so did Cloud vendors revenue. Openstack fitted beautifully under the "Public Cloud" offering, and more big players such as HP (HP Helion) used the open source code to modify and create their own Cloud offering solutions. We also learnt how the different components and sub components of Openstack interact with each other using RESTful API and RPC mechanism to generate a Virtual machine, and how with every release, Openstack just continues to expand and incorporate the latest Cloud technologies!
+
+Hopefully the readers have established a very basic idea as to how Openstack operates in general, and it's implications in Cloud Computing. Please do give your honest feedback, constructive criticisms and/or your doubts under the comments section! No article is complete without these three valuable components :). 
